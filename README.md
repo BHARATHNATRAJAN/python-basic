@@ -1,51 +1,14 @@
 # Python Basic Programs
 
-This repository contains simple Python programs for beginners to
-practice **input, loops, range, string splitting, and binary number
-conversion**.
+This repository contains simple Python programs for beginner practice.
 
-## 1. Print Numbers in a Range
+## Programs Included
 
-### Program
+### 1. Binary Numbers Divisible by 5
 
-``` python
-n = int(input())
-n2 = int(input())
+This program accepts comma-separated binary numbers and prints the numbers that are divisible by 5.
 
-for i in range(n, n2):
-    print(i)
-```
-
-### Example Input
-
-``` text
-1
-5
-```
-
-### Output
-
-``` text
-1
-2
-3
-4
-```
-
-### Explanation
-
--   `input()` gets the value from the user.
--   `int()` converts the input into an integer.
--   `range(n, n2)` generates numbers from `n` up to `n2 - 1`.
--   `for` loop prints each number.
-
-------------------------------------------------------------------------
-
-## 2. Check Binary Numbers Divisible by 5
-
-### Program
-
-``` python
+```python
 a = input().split(",")
 
 for i in a:
@@ -53,37 +16,105 @@ for i in a:
         print(i, end=" ")
 ```
 
-### Example Input
-
-``` text
+**Example Input**
+```text
 0100,0011,1010,1001
 ```
 
-### Output
-
-``` text
+**Output**
+```text
 1010
 ```
 
-### Explanation
+**Screenshot**
 
--   `split(",")` separates the input using commas.
--   `for i in a` checks each binary number.
--   `int(i, 2)` converts the binary number into decimal.
--   `% 5 == 0` checks whether the number is divisible by 5.
--   `print(i, end=" ")` prints the matching binary number.
+![Binary Divisible by 5](binary_divisible_by_5.png)
+
+---
+
+### 2. Count Letters and Digits
+
+This program counts the number of letters and digits in a sentence.
+
+```python
+text = input("Enter a sentence: ")
+
+letters = 0
+digits = 0
+
+for ch in text:
+    if ch.isalpha():
+        letters += 1
+    elif ch.isdigit():
+        digits += 1
+
+print("LETTERS", letters)
+print("DIGITS", digits)
+```
+
+**Screenshot**
+
+![Letters and Digits](letters_and_digits.png)
+
+---
+
+### 3. Factorial of a Number
+
+This program calculates the factorial of a given number using a `for` loop.
+
+```python
+n = int(input())
+
+fact = 1
+
+for i in range(1, n + 1):
+    fact = fact * i
+
+print(fact)
+```
+
+**Example Input**
+```text
+5
+```
+
+**Output**
+```text
+120
+```
+
+**Screenshot**
+
+![Factorial](factorial.png)
+
+---
 
 ## Concepts Practiced
 
--   `input()`
--   `int()`
--   `split()`
--   `for` loop
--   `range()`
--   Binary to decimal conversion
--   Modulus operator `%`
--   `print()`
+- `input()`
+- `int()`
+- `split()`
+- `for` loop
+- `range()`
+- `if` / `elif`
+- `isalpha()`
+- `isdigit()`
+- Binary to decimal conversion
+- Modulus operator `%`
+- Factorial calculation
+- `print()`
+
+## Repository Structure
+
+```text
+python-basic-programs/
+│
+├── README.md
+├── binary_divisible_by_5.png
+├── letters_and_digits.png
+└── factorial.png
+```
 
 ## Author
 
-Beginner Python Practice
+Python Beginner Practice
