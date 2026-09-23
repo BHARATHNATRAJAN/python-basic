@@ -28,7 +28,8 @@ for i in a:
 
 **Screenshot**
 
-![Binary Divisible by 5](binary_divisible_by_5.png)
+<img width="961" height="771" alt="image" src="https://github.com/user-attachments/assets/117dd277-5ce8-44be-aecc-2ad80ac5a6cc" />
+
 
 ---
 
@@ -54,7 +55,7 @@ print("DIGITS", digits)
 
 **Screenshot**
 
-![Letters and Digits](letters_and_digits.png)
+<img width="962" height="756" alt="image" src="https://github.com/user-attachments/assets/74d1938f-e67b-4f02-9512-4e88b185ba41" />
 
 ---
 
